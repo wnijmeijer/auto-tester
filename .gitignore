@@ -1,0 +1,6 @@
+.DS_Store
+*.key
+*.log
+node_modules
+tests_output
+config.js

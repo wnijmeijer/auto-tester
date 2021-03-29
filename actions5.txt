@@ -1,0 +1,18 @@
+A, COMMENT: USAGE, MAKES YOU USE ONLY CSS selectors (check with document.querySelector)
+A, COMMENT: SCENARIO, OPERATOR, SELECTOR
+A, COMMENT: SCENARIO = A (All), 1..9. One of the scenario's will be selected (random)
+A, COMMENT: OPERATOR = FAST, click on the SELECTOR directly
+A, COMMENT: OPERATOR = NORMAL, click on the SELECTOR and wait after it
+A, COMMENT: OPERATOR = URL, use the URL specified 
+A, COMMENT: TYPE, type KEYWORDS from keywords.txt
+A, COMMENT: SLEEP = SLEEP for SELECTOR milliseconds
+A, COMMENT: SELECTOR, use PREV to repeat the previous step, use RND to replace by random value, RND2 to replace by random value starting at 2 (for related lists)
+A, URL, https://labs.coveodemo.com/multisite/ListingPageSite2.html
+1, COMMENT: OPEN 
+1, NORMAL, #list1 div.CoveoResultList > div > div:nth-child(RND) > div .CoveoResultLink
+1, SLEEP 1000
+1, NORMAL, #list2 div.CoveoResultList > div > div:nth-child(RND) > div .CoveoResultLink
+1, SLEEP 1000
+2, COMMENT: OPEN
+2, NORMAL, #list2 div.CoveoResultList > div > div:nth-child(RND) > div .CoveoResultLink
+2, SLEEP 1000

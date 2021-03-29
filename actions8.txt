@@ -1,0 +1,35 @@
+A, COMMENT: USAGE, MAKES YOU USE ONLY CSS selectors (check with document.querySelector)
+A, COMMENT: SCENARIO, OPERATOR, SELECTOR
+A, COMMENT: SCENARIO = A (All), 1..9. One of the scenario's will be selected (random)
+A, COMMENT: OPERATOR = FAST, click on the SELECTOR directly
+A, COMMENT: OPERATOR = NORMAL, click on the SELECTOR and wait after it
+A, COMMENT: OPERATOR = URL, use the URL specified 
+A, COMMENT: TYPE, type KEYWORDS from keywords.txt
+A, COMMENT: TYPET, type text (3rd argument)
+A, COMMENT: SLEEP = SLEEP for SELECTOR milliseconds
+A, COMMENT: SELECTOR, use PREV to repeat the previous step, use RND to replace by random value, RND2 to replace by random value starting at 2 (for related lists)
+A, URL, https://search.cloud.coveo.com/pages/workplacedemoqjjnc2v7/full2
+A, SLEEP, 1500
+A, FAST, #loginWithOffice365
+A, SLEEP, 1500
+A, TYPET, #i0116, adelev@M365x988456.onmicrosoft.com
+A, SLEEP, 500
+A, FAST, #idSIButton9
+A, SLEEP, 500
+A, TYPET, #i0118, &3
+A, FAST, #idSIButton9
+A, SLEEP, 500
+A, FAST, #idBtn_Back
+A, SLEEP, 2500
+A, SELECT, #ProfilesDropdown, Marketing
+A, SLEEP, 2500
+A, TYPE, div.magic-box-input > input[type=text]
+A, SLEEP, 500
+A, FAST, #mysearchbox > a
+A, SLEEP, 2000
+1, COMMENT: Switch TAB
+1, NORMAL, #mySideService
+1, COMMENT: Follow link
+1, SLEEP, 500
+1, TYPE, #SelfTitle
+1, SLEEP, 1500

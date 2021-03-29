@@ -1,0 +1,52 @@
+A, COMMENT: USAGE, MAKES YOU USE ONLY CSS selectors (check with document.querySelector)
+A, COMMENT: SCENARIO, OPERATOR, SELECTOR
+A, COMMENT: SCENARIO = A (All), 1..9. One of the scenario's will be selected (random)
+A, COMMENT: OPERATOR = FAST, click on the SELECTOR directly
+A, COMMENT: OPERATOR = NORMAL, click on the SELECTOR and wait after it
+A, COMMENT: OPERATOR = URL, use the URL specified 
+A, COMMENT: TYPE, type KEYWORDS from keywords.txt
+A, COMMENT: SLEEP = SLEEP for SELECTOR milliseconds
+A, COMMENT: SELECTOR, use PREV to repeat the previous step, use RND to replace by random value, RND2 to replace by random value starting at 2 (for related lists)
+A, URL, https://labs.coveodemo.com/multisite/SearchPageSite2.html
+A, TYPE, div.magic-box-input > input[type=text]
+A, FAST, span.coveo-search-button
+A, SLEEP, 2000
+1, COMMENT: OPEN 
+1, NORMAL, div.CoveoResultList > div > div:nth-child(1) > div .coveo-result-cell > .CoveoResultLink
+1, SLEEP 500
+1, NORMAL, div.CoveoResultList > div > div:nth-child(2) > div .coveo-result-cell > .CoveoResultLink
+1, SLEEP 500
+1, NORMAL, div.CoveoResultList > div > div:nth-child(3) > div .coveo-result-cell > .CoveoResultLink
+1, SLEEP 500
+1, NORMAL, div.CoveoResultList > div > div:nth-child(4) > div .coveo-result-cell > .CoveoResultLink
+1, SLEEP 500
+2, COMMENT: OPEN 
+2, NORMAL, div.CoveoResultList > div > div:nth-child(1) > div .coveo-result-cell > .CoveoResultLink
+2, SLEEP 500
+2, COMMENT: Switch TAB
+2, NORMAL, .CoveoTab[data-caption="Help"]
+2, SLEEP 500
+2, COMMENT: Follow link
+2, NORMAL, div.CoveoResultList > div > div:nth-child(1) > div .coveo-result-cell > .CoveoResultLink
+2, SLEEP 500
+2, NORMAL, div.CoveoResultList > div > div:nth-child(2) > div .coveo-result-cell > .CoveoResultLink
+2, SLEEP 500
+2, NORMAL, div.CoveoResultList > div > div:nth-child(3) > div .coveo-result-cell > .CoveoResultLink
+2, SLEEP 500
+2, COMMENT: Switch TAB
+2, NORMAL, .CoveoTab[data-caption="All Content"]
+2, SLEEP 500
+2, COMMENT: Follow link
+2, NORMAL, div.CoveoResultList > div > div:nth-child(1) > div .coveo-result-cell > .CoveoResultLink
+2, SLEEP 500
+3, COMMENT: OPEN 
+3, NORMAL, div.CoveoResultList > div > div:nth-child(1) > div .coveo-result-cell > .CoveoResultLink
+3, COMMENT: Switch TAB
+3, NORMAL, .CoveoTab[data-caption="Website"]
+3, COMMENT: Follow link
+3, NORMAL, div.CoveoResultList > div > div:nth-child(4) > div .coveo-result-cell > .CoveoResultLink
+3, SLEEP 500
+3, NORMAL, div.CoveoResultList > div > div:nth-child(2) > div .coveo-result-cell > .CoveoResultLink
+3, SLEEP 500
+3, NORMAL, div.CoveoResultList > div > div:nth-child(3) > div .coveo-result-cell > .CoveoResultLink
+3, SLEEP 500

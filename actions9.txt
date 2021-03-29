@@ -1,0 +1,132 @@
+A, COMMENT: USAGE, MAKES YOU USE ONLY CSS selectors (check with document.querySelector)
+A, COMMENT: SCENARIO, OPERATOR, SELECTOR
+A, COMMENT: SCENARIO = A (All), 1..9. One of the scenario's will be selected (random)
+A, COMMENT: OPERATOR = FAST, click on the SELECTOR directly
+A, COMMENT: OPERATOR = NORMAL, click on the SELECTOR and wait after it
+A, COMMENT: OPERATOR = URL, use the URL specified 
+A, COMMENT: TYPE, type KEYWORDS from keywords.txt
+A, COMMENT: TYPET, type text (3rd argument)
+A, COMMENT: SLEEP = SLEEP for SELECTOR milliseconds
+A, COMMENT: SELECTOR, use PREV to repeat the previous step, use RND to replace by random value, RND2 to replace by random value starting at 2 (for related lists)
+A, URL, https://search.cloud.coveo.com/pages/workplacedemoqjjnc2v7/full2
+A, SLEEP, 1500
+A, FAST, #loginWithOffice365
+A, SLEEP, 1500
+A, TYPET, #i0116, adelev@M365x988456.onmicrosoft.com
+A, FAST, #idSIButton9
+A, SLEEP, 500
+A, TYPET, #i0118, &3
+A, FAST, #idSIButton9
+A, SLEEP, 500
+A, FAST, #idBtn_Back
+A, SLEEP, 2500
+A, SELECT, #ProfilesDropdown, Mark 8
+A, SLEEP, 2500
+A, TYPE, div.magic-box-input > input[type=text]
+A, SLEEP, 500
+A, FAST, #mysearchbox > a
+A, SLEEP, 2000
+1, COMMENT: OPEN 
+1, NORMAL, li[data-value="Office 365"]
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(1)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(2)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(3)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+1, NORMAL, li[data-value="Marketing Blog"]
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+1, NORMAL, div.CoveoBreadcrumb > div.coveo-breadcrumb-clear-all.coveo-accessible-button
+1, SLEEP, 500
+1, NORMAL, #mysearch div.coveo-facet-column .CoveoDynamicFacet[data-field="@common_category"] > ul > li:nth-child(RND)
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+1, NORMAL, div.CoveoBreadcrumb > div.coveo-breadcrumb-clear-all.coveo-accessible-button
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+1, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+1, SLEEP, 500
+1, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+1, SLEEP, 500
+2, COMMENT: Switch TAB
+2, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(1)  .CoveoQuickview
+2, SLEEP, 500
+2, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+2, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(1)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, COMMENT: Switch TAB
+3, NORMAL, .CoveoTab[data-caption="Files"]
+3, COMMENT: Follow link
+3, NORMAL, li[data-value="Office 365"]
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(4)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(1)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(2)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(1)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+3, NORMAL, #mysearch > div.coveo-results-column > div.CoveoResultList > div > div:nth-child(RND)  .CoveoQuickview
+3, SLEEP, 500
+3, NORMAL, div.coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > div > header > span
+3, SLEEP, 500
+4, COMMENT: Switch TAB
+4, NORMAL, #tabService
+4, COMMENT: Follow link
+4, SLEEP, 500
+4, TYPE, #SelfTitle
+4, SLEEP, 1500
+5, NORMAL, #myDashboard
+5, SLEEP, 1500
+5, NORMAL, #teamwidget > div > div.coveo-facet-settings-more
+5, SLEEP, 500
+5, NORMAL, #selectedwidget > div > div.coveo-facet-settings-more
+5, SLEEP, 500
+5, NORMAL, #newpeoplewidget > div > div.coveo-facet-settings-more
+5, SLEEP, 1500
+

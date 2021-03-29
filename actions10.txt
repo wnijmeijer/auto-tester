@@ -1,0 +1,67 @@
+A, COMMENT: USAGE, MAKES YOU USE ONLY CSS selectors (check with document.querySelector)
+A, COMMENT: SCENARIO, OPERATOR, SELECTOR
+A, COMMENT: SCENARIO = A (All), 1..9. One of the scenario's will be selected (random)
+A, COMMENT: OPERATOR = FAST, click on the SELECTOR directly
+A, COMMENT: OPERATOR = NORMAL, click on the SELECTOR and wait after it
+A, COMMENT: OPERATOR = URL, use the URL specified 
+A, COMMENT: TYPE, type KEYWORDS from keywords.txt
+A, COMMENT: TYPET, type text (3rd argument)
+A, COMMENT: SLEEP = SLEEP for SELECTOR milliseconds
+A, COMMENT: SELECTOR, use PREV to repeat the previous step, use RND to replace by random value, RND2 to replace by random value starting at 2 (for related lists)
+A, URL, https://search.cloud.coveo.com/pages/workplacedemoqjjnc2v7/full2
+A, SLEEP, 1500
+A, FAST, #loginWithOffice365
+A, SLEEP, 1500
+A, TYPET, #i0116, adelev@M365x988456.onmicrosoft.com
+A, FAST, #idSIButton9
+A, SLEEP, 500
+A, TYPET, #i0118, &3
+A, FAST, #idSIButton9
+A, SLEEP, 500
+A, FAST, #idBtn_Back
+A, SLEEP, 2500
+A, SELECT, #ProfilesDropdown, Mark 8
+A, SLEEP, 2500
+A, NORMAL, html > body > #search > .main > #myDashboardDIV > :nth-child(3) > #div1 > #RecTeam > #Rec3 > #teamwidget > :nth-child(1) > .coveo-facet-settings-more
+A, SLEEP, 1500
+A, NORMAL, html > body > .coveo-modal-container.coveo-opened.coveo-mod-small.coveo-advanced-search-modal.coveo-mod-fade-in-scale > .coveo-modal-content > header > span > svg
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #myDashboardDIV > :nth-child(3) > #div1 > #RecTeam > #Rec3 > .coveo-recommendation-body > .CoveoResultList > .coveo-result-list-container.coveo-list-layout-container > :nth-child(1) > .coveo-result-frame > :nth-child(1) > :nth-child(1) > .coveo-result-row > :nth-child(3) > .CoveoQuickview.QV.coveo-accessible-button > :nth-child(1) > .coveo-icon-for-quickview > svg
+A, SLEEP, 1500
+A, NORMAL, html > body > .coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > .coveo-modal-content > header > .coveo-small-close
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #myDashboardDIV > :nth-child(3) > #div2 > #RecRecommend > .CoveoRecommendation.CoveoSearchInterface.Coveostate.CoveoComponentState.CoveoComponentOptions.CoveoQueryController.coveo-after-initialization.CoveoDebug > .coveo-recommendation-body > .CoveoResultList > .coveo-result-list-container.coveo-list-layout-container > :nth-child(1) > .coveo-result-frame > :nth-child(1) > :nth-child(1) > .coveo-result-row > :nth-child(3) > .CoveoQuickview.QV.coveo-accessible-button > :nth-child(1) > .coveo-icon-for-quickview > svg
+A, SLEEP, 1500
+A, NORMAL, html > body > .coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > .coveo-modal-content > header > .coveo-small-close > svg
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mySearchSection > #mysearchbox > .CoveoOmnibox.coveo-query-syntax-disabled.magic-box > .magic-box-input > input
+A, SLEEP, 1500
+A, TYPE, div.magic-box-input > input[type=text]
+A, NORMAL, html > body > #search > .sidebar > ul > #tabSearch > #mySideSearch
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-facet-column > :nth-child(5) > .coveo-dynamic-facet-values > :nth-child(2) > label > .coveo-checkbox-span-label
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-facet-column > :nth-child(5) > .coveo-dynamic-facet-values > :nth-child(2) > label > input
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-facet-column > :nth-child(5) > .coveo-dynamic-facet-values > :nth-child(6) > label > .coveo-checkbox-span-label
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-facet-column > :nth-child(5) > .coveo-dynamic-facet-values > :nth-child(6) > label > input
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-facet-column > :nth-child(6) > .coveo-dynamic-facet-values > :nth-child(2) > label > .coveo-checkbox-span-label
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-facet-column > :nth-child(6) > .coveo-dynamic-facet-values > :nth-child(2) > label > input
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .coveo-results-column > .CoveoResultList > .coveo-result-list-container.coveo-list-layout-container > :nth-child(1) > .CoveoTemplateLoader > .coveo-result-frame > :nth-child(1) > .CoveoQuickview.coveo-accessible-button > :nth-child(1) > .coveo-icon-for-quickview > svg
+A, SLEEP, 1500
+A, NORMAL, html > body > .coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > .coveo-modal-content > .coveo-modal-body.coveo-mod-header-paddding.coveo-mod-form-top-bottom-padding > .coveo-computed-modal-box-content > :nth-child(1) > :nth-child(1) > .coveo-quick-view-full-height > .CoveoDetails > :nth-child(2) > .coveo-folding-header > .coveo-folding-results2 > :nth-child(2) > :nth-child(1) > .CoveoQuickviewEmbedded.CoveoQuickview.coveo-accessible-button > .CoveoFieldValue.display-name > span
+A, SLEEP, 1500
+A, NORMAL, html > body > .coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > .coveo-modal-content > .coveo-modal-body.coveo-mod-header-paddding.coveo-mod-form-top-bottom-padding > .coveo-computed-modal-box-content > :nth-child(1) > :nth-child(1) > .coveo-quick-view-full-height.People > .userpage-org > .CoveoTeam > :nth-child(5) > .CoveoTemplateLoader > :nth-child(1) > .CoveoQuickviewEmbedded.CoveoQuickview.coveo-accessible-button > .CoveoFieldValue.title > span
+A, SLEEP, 1500
+A, NORMAL, html > body > .coveo-modal-container.coveo-opened.coveo-mod-big.coveo-quick-view.coveo-mod-fade-in-scale > .coveo-modal-content > header > .coveo-small-close
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .main > #mysearch > .AdditionalTabs > div > :nth-child(3) > p
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .sidebar > ul > #tabmyleader > #mySideLeader > p
+A, SLEEP, 1500
+A, NORMAL, html > body > #search > .sidebar > ul > #tabmysearchpeople > #mySidePeople > p
+1, COMMENT: OPEN 

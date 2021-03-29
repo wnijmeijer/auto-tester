@@ -1,0 +1,17 @@
+{
+  "name": "auto-tester",
+  "version": "1.0.0",
+  "main": "check.js",
+  "dependencies": {
+    "puppeteer": "^5.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
